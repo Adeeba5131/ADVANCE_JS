@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    
+    <style>
+        .box{
+            margin: 100px auto;
+            padding: 50px;
+            width: 50px;
+            height: 50%;
+        }
+
+        input{
+            margin: 20px;
+            padding: 10px;
+        }
+
+        button{
+            margin: 10px;
+        }
+    </style>
+</head>
+<script src="script.js"></script>
+<body>
+    
+    <fieldset class="box">
+        <input type="text" id="item">
+        <button onclick="addItem()">Add item</button>
+        <button onclick="removeItem()">Remove Last item</button>
+
+        <ul id="list"></ul>
+    </fieldset>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Practice</title>
+</head>
+<body>
+    <h3>CHANGE TEXT WITH DOM</h3>
+     <p id="demo">HELLO</p>
+     <button onclick="changeText()">CLick To Change Text</button>
+     <script>
+        function changeText(){
+            document.getElementById('demo').innerHTML = "Welcome to JavaScript!!!!"
+        } 
+     </script>
+
+     <p id="demo1">Adeeba khan</p>
+     <button onclick="changetext1()">Click to change</button>
+     <script>
+        function changetext1(){
+            document.getElementById('demo1').innerHTML="Pathan Adeeba Anas Khan"
+        }
+     </script>
+
+     <h3>CHANGE IMAGE</h3>
+
+     <h1 id="title">JAVASCRIPT</h1>
+     <button onclick="changeColor()">Click to change color</button>
+     <script>
+        function changeColor(){
+            document.getElementById('title').style.color= "Red";
+        }
+     </script>
+
+     <h3>INPUT BOX</h3>
+
+     <input type="text" id="name">
+     <button onclick="showName()">Show</button>
+     <p id="result"></p>
+
+     <script>
+          function showName(){
+             let name = document.getElementById("name").value;
+            document.getElementById('result').innerHTML= "My name is  " + name;
+        }
+     </script>
+
+       <h3>Change Image</h3>
+
+       <img id="img" src="jk.jpg" alt=""><br>
+       <button onclick="changeImage()">Click to change Image</button>
+
+       <script>
+        function changeImage(){
+            document.getElementById('img').src = "V.jpg";
+        }
+       </script>
+
+        <h3>Button Disabled</h3>
+        <button id="btn">Submit</button>
+        <button onclick="disableBtn()">Disable Submit</button>
+        <script>
+
+            function disableBtn(){
+
+                 document.getElementById('btn').disabled = true;
+
+            }  
+        </script>
+
+
+<h1 id="heading">Adeeba Khan</h1>
+<button onclick="showHeading()">Show</button>
+<button onclick="hideHeading()">Hide</button>
+
+<script>
+function showHeading(){
+   document.getElementById ('heading').style.display ="block";
+}
+
+function hideHeading(){
+    document.getElementById('heading').style.display="none";
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert Adjacent HTML</title>
+</head>
+<body>
+    <div id="text" style="background-color: rgb(237, 115, 115); color: white;border: 3px solid rgb(240, 36, 70); padding: 10px;">
+        <h1>Hi I am ADEEBA</h1>
+    </div>
+
+    <script>
+        let myText = document.getElementById('text');
+        myText.insertAdjacentHTML('beforebegin', "<h1>Hi I am Mamta");
+        myText.insertAdjacentHTML('afterbegin',"<h1>Hi I am Zaiba</h1>");
+        myText.insertAdjacentHTML('beforeend', "<h1>Hi I am Mashira</h1>");
+        myText.insertAdjacentHTML('Afterend',"<h1>Hi I am Bhavna</h1>");
+    </script>
+
+    
+</body>
+</html>
